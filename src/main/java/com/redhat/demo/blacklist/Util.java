@@ -97,7 +97,7 @@ public class Util {
 
 		List<String> list = extractCause(content);
 		StringBuilder builder = new StringBuilder();
-		builder.append("{ \"result\" : \"" + ((list.size() > 0)? "no": "yes"));
+		builder.append("{ \"valid\" : \"" + ((list.size() > 0)? "0": "1"));
 		
 		if (list.size() > 0) {
 			int i = 0;
